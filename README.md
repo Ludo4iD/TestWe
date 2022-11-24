@@ -29,3 +29,16 @@ J'ai utilisé 3 contrôleurs dans lesquels, on trouve le routing en annontations
 
 ## Les appels POST/DELETE
 .../api/movies en methode POST permet de mettre en base un film donné au format JSON dans le body (/people pour les personnes)
+
+## Les entités et Repositories correspondants
+Des entités Movies / People / Type / User puis aussi MovieHasPeople afin de pouvoir garder les données role et significance 
+sur les relations entre entités.
+
+## Un dossier DBAl 
+dans lequel on trouve le type EnumSignificance.
+
+## Un dossier EventSubscriber
+avec un ExceptionSubscriber qui permet de gérer les exceptions au format Json.
+
+## Un dossier Service
+qui contient une classe qui permet de récupérer le poster d'un film via appel à une API
